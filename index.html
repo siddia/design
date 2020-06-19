@@ -28,7 +28,7 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" >
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -50,15 +50,22 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="resume.pdf" target="_blank" > Resume </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Resume</a>
-            </li>
+            <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+            
+
+            <label class="switch">
+              <input type="checkbox" onclick="myFunction()">
+              <span class="slider round"></span>
+            </label> 
+
+            <li >
+            <i class=" fas fa-circle text-primary" style="padding: 1.1rem"></i>
+             </li>
+
           </ul>
+          <!--  -->
         </div>
       </div>
     </nav>
@@ -75,35 +82,34 @@
     <!-- </header> -->
 
 
-    <!-- Services -->
-    <section id="services" >
-    	<!--  -->
-
+    <!-- home -->
+  <section id="home" >
 	<div class="hero-wrap js-fullheight">
 		<div class="overlay"></div>
-		<div id="particles-js"></div>
+		<div id="particles-js"> </div>
       <div class="container" Data-scrollax-parent="false">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase"> <br> </h2>
-            <h3 class="section-subheading text-muted"></h3>
+            <!-- <h3 class="section-subheading text-muted"></h3> -->
             <br>
           </div>
         </div>
         <div class="row ">
-        	<div class="col-md-4 text-right">
-        	 <span class="fa-stack fa-4x">
+          <div class="col-md-2"></div>
+        	<div class="col-xs-2 align-items-center "><br>
+        	 <span class="fa-stack fa-4x" >
               <i class="fas fa-cubes fa-stack-2x text-primary"></i>
               <!-- <i class="fas fa-cubes fa-stack-1x fa-inverse"></i> -->
             </span> 
             </div>
-          <div class="col-md-8 text-left">
-            <h2 class="service-heading">Aras Siddiqui</h2>
-            <p class= "text-muted"> I am a multi-disciplinary 
-               <b><span class="typer" id="main" data-words="UX,Product,Wesite" data-colors="#ed426d,#6d67c6,#b74033" data-delay="100" data-deleteDelay="1000"></span></b>
+          <div class="col-md-6 text-left">
+            <h2 class="service-heading" style="padding-bottom: 1rem">Aras Siddiqui</h2> 
+            <h5 class= "text-muted border1"> I am a multi-disciplinary 
+               <b><span class="typer" id="main" data-words="UX,Graphic,Wesite" data-colors="#FF26BE,#6d67c6,#b74033" data-delay="100" data-deleteDelay="1000"></span></b>
               <span class="none" data-owner="main"></span>
-             Designer</p>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+             Designer</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. <br><br></p>
             <br>
           </div>
         </div>
@@ -112,11 +118,12 @@
       <div class="col-lg-12 text-center">
        <div class="arrowDown"> </div> 
         </div>
-		</div>	
+		</div>
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio" >
+  <!--  
+  <section class="bg-light" id="portfolio" >
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -124,7 +131,7 @@
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
-         <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+         <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -210,9 +217,9 @@
               <h4>Window</h4>
               <p class="text-muted">Photography</p>
             </div>
-          </div> -->
- <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-		<div class="row" >
+          </div> 
+ 
+		    <div class="row" >
            <div class="portfolio-item" >
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                  <div class="portfolio-hover">
@@ -223,16 +230,15 @@
                        </i>
                     </div>
                  </div>
-                 <img class="img-fluid " src="img\portfolio\person-holding-iphone.jpg" alt="" style="border-radius: 5%;">
+                 <img class="img-fluid " src="img\phone.jpg" alt="" style="border-radius: 5%;">
               </a>
            </div>
            <div class="col-md-4 border3 portfolio-caption">
               <h4>Explore</h4>
-              <p class="text-muted"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
+              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
               <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal1"><span>View Project  </span> </a>
            </div>
         </div>
-
 
         <div class="row">
            <div class="portfolio-item order-lg-2" >
@@ -250,7 +256,7 @@
            </div>
            <div class="col-md-4 border3 portfolio-caption order-lg-1">
               <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
               <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal2"><span>View Project  </span> </a>
            </div>
         </div>
@@ -272,17 +278,101 @@
            </div>
            <div class="col-md-4 border3 portfolio-caption">
               <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
               <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal3"><span>View Project  </span> </a>
            </div>
         </div>
 
       </div>
-    </section>
+    </section>-->
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="bg-light" id="portfolio" style="padding-bottom: 2rem">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+      </div>
+<!-- start of item1 -->
+     <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 portfolio-item">          
+          <a class="portfolio-link"  href="case1.html">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i>
+                   <h4> Case</h4>
+                    <p>Finish up this part </p>
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid " src="img\phone.jpg" alt="" style="border-radius: 5%;">
+          </a>  
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5 portfolio-caption">
+            <h3>Portfolio 1</h3><br>
+            <p class="text-muted">Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p><br>
+          <a type="button" class="btn btn-outline-warning btn" href="case1.html">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+ <!-- end of item 1 -->
 
+    <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-1 portfolio-item">          
+          <a class="portfolio-link"  href="caseo.html">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i>
+                   <h4> Case</h4>
+                    <p>Finish up this part </p>
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid " src="img\portfolio\selective-focus-iphone.jpg" alt="" style="border-radius: 5%;">
+          </a>  
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 portfolio-caption">
+            <h3>Portfolio 2</h3><br>
+            <p class="text-muted">Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p><br>
+          <a type="button" class="btn btn-outline-warning btn" href="caseo.html">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div> 
 
+    <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 portfolio-item">          
+          <a class="portfolio-link"  href="caseo.html">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i>
+                   <h4> Case</h4>
+                    <p>Finish up this part </p>
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid " src="img\portfolio\turned-on-iphone.jpg" alt="" style="border-radius: 5%;">
+          </a>  
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5 portfolio-caption">
+            <h3>Portfolio 3</h3><br>
+            <p class="text-muted">Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p><br>
+          <a type="button" class="btn btn-outline-warning btn" href="caseo.html">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </section>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <!-- About -->
@@ -339,7 +429,7 @@
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
+              <!-- <li class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
                 </div>
@@ -352,12 +442,12 @@
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                   </div>
                 </div>
-              </li>
+              </li> -->
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+                  <h4>Upcoming
+                    <br>Future
+                    <br>Ventures!</h4>
                 </div>
               </li>
             </ul>
@@ -458,33 +548,7 @@
       </div>
     </section>
  -->
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
    <!--   Contact -->
    <!-- <section id="contact">
@@ -798,7 +862,23 @@
     <!-- Typer -->
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
+<!-- dark -->
+<!--  <script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script> -->
 
+  <!-- dark test -->
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+     
+     
+  }
+  </script>
 
   </body>
 
