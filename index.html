@@ -40,9 +40,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-            </li>
+            <!-- <li class="nav-link ">
+              <i class=" far fa-moon text-primary" style="" ></i>
+              
+            </li> -->
+               
+            <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+            <!-- Dark -->
+            <li class="nav-link" style="display: grid; place-items: center;">
+            <!-- <label class="switch">
+              <input type="checkbox" onclick="darkMode()">
+              <span class="slider round"></span>
+            </label> -->
+           </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
@@ -50,19 +60,8 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="resume.pdf" target="_blank" > Resume </a>
-            </li>
-            <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-            
-
-            <label class="switch">
-              <input type="checkbox" onclick="myFunction()">
-              <span class="slider round"></span>
-            </label> 
-
-            <li >
-            <i class=" fas fa-circle text-primary" style="padding: 1.1rem"></i>
-             </li>
+              <a class="nav-link js-scroll-trigger" href="resume-1pg.pdf" target="_blank" > Resume </a>
+            </li>         
 
           </ul>
           <!--  -->
@@ -83,8 +82,8 @@
 
 
     <!-- home -->
-  <section id="home" >
-	<div class="hero-wrap js-fullheight">
+  <section id="home" class="hero-wrap js-fullheight overlay" style="position: relative;">
+	<!-- <div class="hero-wrap js-fullheight"> -->
 		<div class="overlay"></div>
 		<div id="particles-js"> </div>
       <div class="container" Data-scrollax-parent="false">
@@ -105,11 +104,10 @@
             </div>
           <div class="col-md-6 text-left">
             <h2 class="service-heading" style="padding-bottom: 1rem">Aras Siddiqui</h2> 
-            <h5 class= "text-muted border1"> I am a multi-disciplinary 
-               <b><span class="typer" id="main" data-words="UX,Graphic,Wesite" data-colors="#FF26BE,#6d67c6,#b74033" data-delay="100" data-deleteDelay="1000"></span></b>
-              <span class="none" data-owner="main"></span>
-             Designer</h5>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. <br><br></p>
+            <h5 class= "text-muted "> A multi-disciplinary 
+               <b><span class="typer" id="main" data-words="UX,Product,Website" data-colors="#EA4335,#3b5998,#1DB954" data-delay="100" data-deleteDelay="1000"></span></b>
+              <span class="none" data-owner="main"></span>Designer</h5>
+            <p class="text-muted">Passionate about researching user behaviors and developing products that connect humans with technology.<br><br></p>
             <br>
           </div>
         </div>
@@ -117,177 +115,14 @@
       </div>	
       <div class="col-lg-12 text-center">
        <div class="arrowDown"> </div> 
-        </div>
+        <!-- </div> -->
 		</div>
     </section>
 
-    <!-- Portfolio Grid -->
-  <!--  
-  <section class="bg-light" id="portfolio" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-         <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-				    <i> 
-					    <h4> Case</h4>
-					    <p>Finish up this part </p>
-				    </i>
-				</div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
-          </div> 
- 
-		    <div class="row" >
-           <div class="portfolio-item" >
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                 <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                       <i>
-                          <h4> Case</h4>
-                          <p>Finish up this part </p>
-                       </i>
-                    </div>
-                 </div>
-                 <img class="img-fluid " src="img\phone.jpg" alt="" style="border-radius: 5%;">
-              </a>
-           </div>
-           <div class="col-md-4 border3 portfolio-caption">
-              <h4>Explore</h4>
-              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
-              <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal1"><span>View Project  </span> </a>
-           </div>
-        </div>
-
-        <div class="row">
-           <div class="portfolio-item order-lg-2" >
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                 <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                       <i>
-                          <h4> Case</h4>
-                          <p>Finish up this part </p>
-                       </i>
-                    </div>
-                 </div>
-                 <img class="img-fluid " src="img\portfolio\selective-focus-iphone.jpg" alt="" style="border-radius: 5%;">
-              </a>
-           </div>
-           <div class="col-md-4 border3 portfolio-caption order-lg-1">
-              <h4>Explore</h4>
-              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
-              <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal2"><span>View Project  </span> </a>
-           </div>
-        </div>
-
-
-        <div class="row">
-           <div class="portfolio-item" >
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                 <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                       <i>
-                          <h4> Case</h4>
-                          <p>Finish up this part </p>
-                       </i>
-                    </div>
-                 </div>
-                 <img class="img-fluid " src="img\portfolio\turned-on-iphone.jpg" alt="" style="border-radius: 5%;">
-              </a>
-           </div>
-           <div class="col-md-4 border3 portfolio-caption">
-              <h4>Explore</h4>
-              <p class="texr"><br>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur</p>
-              <a class="btn btn-primary button" data-toggle="modal" href="#portfolioModal3"><span>View Project  </span> </a>
-           </div>
-        </div>
-
-      </div>
-    </section>-->
+    
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <section class="bg-light" id="portfolio" style="padding-bottom: 2rem">
+  <section class="bg-light " id="portfolio" style="padding-bottom: 2rem">
     <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -297,19 +132,18 @@
         </div>
       </div>
 <!-- start of item1 -->
-     <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+     <div class="container " id="portfolio" style="padding-bottom: 4rem;">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 portfolio-item">          
           <a class="portfolio-link"  href="case1.html">
             <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
+              <!-- <div class="portfolio-hover-content"> -->
                 <i>
-                   <h4> Case</h4>
-                    <p>Finish up this part </p>
+                  <img class="img-fluid " src="img\case\img1.jpg" alt="" style="border-radius: 5%;">
                 </i>
-              </div>
+              <!-- </div> -->
             </div>
-            <img class="img-fluid " src="img\phone.jpg" alt="" style="border-radius: 5%;">
+            <img class="img-fluid " src="img\case\img.jpg" alt="" style="border-radius: 5%;">
           </a>  
         </div>
         <div class="col-lg-6 order-lg-1">
@@ -323,7 +157,7 @@
     </div> 
  <!-- end of item 1 -->
 
-    <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+    <div class="container " id="portfolio" style="padding-bottom: 4rem;">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-1 portfolio-item">          
           <a class="portfolio-link"  href="caseo.html">
@@ -348,7 +182,7 @@
       </div>
     </div> 
 
-    <div class="container bg-light" id="portfolio" style="padding-bottom: 4rem;">
+    <div class="container " id="portfolio" style="padding-bottom: 4rem;">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 portfolio-item">          
           <a class="portfolio-link"  href="caseo.html">
@@ -384,8 +218,32 @@
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-left: 7rem;">
+          <div class="col-lg-4">
+         
+            <img src="img/profile.jpg" class="img-fluid"  style=" border-radius: 3% "alt="Responsive image">
+          </div>
+          <div class="col-md-8 text-left">
+            <h2 class="service-heading" >👋 Hello!</h2> 
+            <h5 class= "text-muted "> My name is Aras</h5>
+            <p class="text-muted">I am an aspiring UX/UI and product designer. I am passionate about making human-computer interaction accessible to empower people and make their lives easy through technology. 
+             
+              I am interested in all areas of design and focus on making design user-centered.
+              <!-- I bring a background o add value to my projects and make conscious and positive contributions in my work environment. I enjoy working on projects which are challenging and push innovation to the limit. -->
+              <br> <br>
+              My interests in design include wearable electronics, product design, UI/UX design and website design.
+              <br><br>
+              Based in Toronto, Canada
+              <br><br>
+              Currently in 4th year of Automation Technology at McMaster University
+              <br><br>          
+              You may also know more about me through my <a href="https://www.linkedin.com/in/siddiqui-aras/">LinkedIn.</a><br><br></p>
+            <br>
+          </div>
+        </div>
+        <div class="row" style="padding-top: 3rem;">
           <div class="col-lg-12">
+            <h3 class= "text-center"> My Journey, thus far</h3> <br><br>
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
@@ -393,11 +251,11 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4>2016-2021</h4>
+                    <h4 class="subheading">Undergrad at McMaster University</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Enrolled in Bachelors of Technology program with a major in Automation. I joined clubs focus in Tech, like MecVT (Custom vehocal team), DeltaHacks (annual hacathon) and Mars Rover Project. I am transitioning more into design and product management roles.</p>
                   </div>
                 </div>
               </li>
@@ -407,11 +265,11 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
+                    <h4>March 2017</h4>
+                    <h4 class="subheading">Co-founded Shuttlr </h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Co-founded transportation startup to run shuttle service in areas that are underserved by public transport in Hamilton. Our team won 1st place at HackTheCity competition. I worked as a designer on the team.</p>
                   </div>
                 </div>
               </li>
@@ -421,11 +279,11 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
+                    <h4>May 2019</h4>
+                    <h4 class="subheading">Makerspace Coordinator</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted"> A 12-month internship where I managed the Makerspace on our campus. I managed daily operations and organized workshops to teach studnets and staff how to use 3D printer, laser cutter and other equiptment. </p>
                   </div>
                 </div>
               </li>
@@ -445,9 +303,9 @@
               </li> -->
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Upcoming
-                    <br>Future
-                    <br>Ventures!</h4>
+                  <h4>More
+                    <br>to
+                    <br>Come!</h4>
                 </div>
               </li>
             </ul>
@@ -596,32 +454,33 @@
     </section>
  -->
     <!-- Footer -->
-    <footer>
+    <footer style="border-top: 1px solid #fbbc04">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          <div class="col-md-9 text-left">
+            <span class="copyright">©2020 Designed and Developed with 💛 by Aras Siddiqui</span> <br>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
+                <a href="mailto:siddia18@mcmaster.ca">
+                  <i class="fas fa-envelope"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                <a href="#about">
+                  <i class="fas fa-user"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/siddiqui-aras/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
+
+          <!-- <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
                 <a href="#">Privacy Policy</a>
@@ -630,217 +489,14 @@
                 <a href="#">Terms of Use</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+   
+    
+    
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -863,22 +519,26 @@
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
 <!-- dark -->
-<!--  <script>
-  function myFunction() {
-     var element = document.body;
-     element.classList.toggle("dark-mode");
-  }
-  </script> -->
+
 
   <!-- dark test -->
+  
 <script>
-  function myFunction() {
-     var element = document.body;
-     element.classList.toggle("dark-mode");
-     
-     
+  function darkMode() {
+     var page = document.body;
+     var pott = document.getElementById("portfolio");
+     page.classList.toggle("dark-mode"); 
+     page.classList.replace('old', 'new');
+     pott.classList.toggle("bg-light");
+     pott.style.backgroundColor = "#333434";
+    
   }
-  </script>
+
+  function darkParticle() {
+
+
+  }
+  </script> 
 
   </body>
 
