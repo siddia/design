@@ -162,7 +162,9 @@ input:checked + .slider:before {
 /*toggle ..............................................*/
 
 .bg-light {
-    background-color: #f8f9fa!important;
+	background-color: #f8f9fa !important;
+    padding-top: 35px !important;
+    padding-bottom: 35px;
 }
 
 .backg {
@@ -635,6 +637,9 @@ header.masthead .intro-text .intro-heading {
 
 }
 
+.case {
+    padding: 0% 17%;
+}
 
 
 #portfolio .portfolio-item {
