@@ -638,7 +638,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 .case {
-    padding: 0% 15%;
+    padding: 3% 15%;
+}
+
+.case2 {
+    padding: 1% 9%;
 }
 
 .side-project{
