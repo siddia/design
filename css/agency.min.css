@@ -493,6 +493,12 @@ margin-top: 1.5rem;
 	margin-left: auto;
   }
   
+  .dot-bg{
+	background-image: url(../img/backg.png);
+	background-repeat: repeat;
+	background-size: cover; /* or background-size: 100% 100%; */
+
+  }
   @media (min-width: 576px) {
 	.container-sm, .container {
 	  max-width: 540px;
@@ -820,6 +826,10 @@ border-radius: 5%;
 	background-color: #212529
 }
 
+.rounded{
+	border-radius: 7%
+}
+
 .timeline {
 	position: relative;
 	padding: 0;
@@ -1029,6 +1039,41 @@ border-radius: 5%;
 	margin-top: 0
 }
 
+.tool-card {
+	border-radius: 15px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+  }
+  
+  /* White background variant */
+  .tool-card-white {
+	background-color: #ffffff;
+  }
+  
+  /* Gray-ish background variant */
+  .tool-card-gray {
+	background-color: #fdf9ea; /* Bootstrap's light gray */
+  }
+  
+  /* Hover effect (applies to both) */
+  .tool-card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-card h5 {
+	margin-top: 1rem;
+	font-weight: 600;
+  }
+  
+  .tool-card p {
+	margin-top: auto;
+  }
+  
 section#contact {
 	background-color: #212529;
 	background-image: url(../img/map-image.png);
