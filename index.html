@@ -26,6 +26,62 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
 
+    <!-- Dark mode custom styles -->
+    <style>
+      /* body.dark-mode {
+        background: #2d2346 !important;
+        color: #e0d7f7 !important;
+      }
+
+      .dark-mode .navbar,
+      .dark-mode .nav-item,
+      .dark-mode .nav-link,
+      .dark-mode .bg-light,
+      .dark-mode footer.bg-light {
+        background: #3a2d5c !important;
+        color: #ffffff !important;
+        border-color: #6550a0 !important;
+      }
+      .dark-mode .section-heading,
+      .dark-mode .section-subheading,
+      .dark-mode .portfolio-caption,
+      .dark-mode .copyright {
+        color: #e0d7f7 !important;
+      }
+      .dark-mode .btn-contact,
+      .dark-mode .btn-primary {
+        background: #7c4dff !important;
+        color: #fff !important;
+        border: none;
+      }
+      .dark-mode .btn-contact:hover,
+      .dark-mode .btn-primary:hover {
+        background: #b388ff !important;
+        color: #2d2346 !important;
+      }
+      .dark-mode .portfolio-item,
+      .dark-mode .modal-content {
+        background: #3a2d5c !important;
+        color: #e0d7f7 !important;
+      }
+      .dark-mode .arrowDown {
+        /* border-bottom: 2px solid #7c4dff !important; */
+        border-right: 2px solid #7c4dff !important;
+        overflow: hidden; 
+      }
+      .btn-toggle-mode {
+        background: transparent;
+        border: none;
+        color: #7c4dff;
+        font-size: 1.5rem;
+        transition: color 0.2s;
+      }
+      .btn-toggle-mode:hover {
+        color: #b388ff;
+      }
+    </style> */
+    <!-- end Dark mode  -->
+
   </head>
 
   <body id="page-top" >
@@ -40,19 +96,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <!-- <li class="nav-link ">
-              <i class=" far fa-moon text-primary" style="" ></i>
-              
-            </li> -->
-               
-            <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-            <!-- Dark -->
-            <li class="nav-link" style="display: grid; place-items: center;">
-            <!-- <label class="switch">
-              <input type="checkbox" onclick="darkMode()">
-              <span class="slider round"></span>
-            </label> -->
-           </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
@@ -62,23 +105,27 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Aras_resume25.pdf" target="_blank" > Resume </a>
             </li>         
-
+            <!-- <li class="nav-item" style="display: flex; align-items: center;">
+              <button id="darkModeToggle" class="btn btn-toggle-mode" aria-label="Toggle dark mode" style="margin-right: 1rem;">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li> -->
           </ul>
           <!--  -->
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
-    <!-- <header class="masthead"> -->
-      <!-- <div class="container"> -->
-        <!-- <div class="intro-text"> -->
-          <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-          <!-- <div class="intro-heading text-uppercase">It's Nice To Meet You</div> -->
-          <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </header> -->
+    <!-- Header
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Our Studio!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header> -->
 
 
     <!-- home -->
@@ -407,7 +454,7 @@
               <!-- Project Details Go Here -->
               <h2 class="text-uppercase">ControlNET & EtherNET</h2>
               <p class="item-intro text-muted">Lab Project</p>
-      <p> The concepts of ControlNet, Ethernet and their applications to exchange information within a PLC network were examined. Methods and protocols used to communicate between PLC’s and other intelligent devices will also be covered. The parts for this experiment are -Unscheduled messaging using ControlNet and Ethernet.</p>
+      <p> The concepts of ControlNet, Ethernet and their applications to exchange information within a PLC network were examined. Methods and protocols used to communicate between PLC's and other intelligent devices will also be covered. The parts for this experiment are -Unscheduled messaging using ControlNet and Ethernet.</p>
       <p> Local PLC command</p>
       
       <ul class="list-inline">
@@ -523,25 +570,30 @@
 
 <!-- dark -->
 
-
   <!-- dark test -->
   
 <script>
-  function darkMode() {
-     var page = document.body;
-     var pott = document.getElementById("portfolio");
-     page.classList.toggle("dark-mode"); 
-     page.classList.replace('old', 'new');
-     pott.classList.toggle("bg-light");
-     pott.style.backgroundColor = "#333434";
-    
-  }
-
-  function darkParticle() {
-
-
-  }
-  </script> 
+  // Dark mode toggle with localStorage
+  window.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('darkModeToggle');
+    const icon = toggleBtn.querySelector('i');
+    // On load, check localStorage
+    if(localStorage.getItem('dark-mode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      icon.classList.replace('fa-moon', 'fa-sun');
+    }
+    toggleBtn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      if(document.body.classList.contains('dark-mode')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('dark-mode', 'enabled');
+      } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('dark-mode', 'disabled');
+      }
+    });
+  });
+</script> 
 
   </body>
 
