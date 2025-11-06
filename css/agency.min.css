@@ -709,6 +709,7 @@ border-radius: 5%;
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
 	font-size: 20px;
 	position: absolute;
+	gap: 2rem;
 	top: 85%;
 	right: 10%;
 	width: 100%;
@@ -770,7 +771,8 @@ border-radius: 5%;
 
 .portfolio-modal .modal-content {
 	padding: 100px 0;
-	text-align: center
+	text-align: center;
+	border-radius: 3rem
 }
 
 .portfolio-modal .modal-content h2 {
